@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/white_opacity_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_weight="0.1"
+            android:padding="10dp"
+            android:layout_gravity="bottom"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_white"
+            android:layout_weight="0.8"
+            android:padding="10dp"
+            android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:layout_weight="0.33">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/product_image"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.61"
+            android:orientation="vertical">
+
+                    <milosevic.m.sasa.supermarket.components.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Naziv"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textColorHint="#fff"
+                        android:layout_marginLeft="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+
+
+                        />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_opacity_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            <milosevic.m.sasa.supermarket.components.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Veličina"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#fff"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_opacity_10"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+        <milosevic.m.sasa.supermarket.components.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Boja"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_opacity_10"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <milosevic.m.sasa.supermarket.components.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Materijal"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_opacity_10"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:background="#feea00"
+                android:textSize="15sp"
+                android:text="Dodaj u korpu"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="17.5dp"
+                android:paddingBottom="22.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="89dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/image_cart"
+        android:src="@drawable/watch"
+
+       />
+    <milosevic.m.sasa.supermarket.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_cart"
+        android:layout_alignParentTop="true"
+        android:text="Sat"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/product"
+        />
+    <milosevic.m.sasa.supermarket.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_cart"
+        android:layout_centerVertical="true"
+        android:text="Cena: $55"
+        android:id="@+id/price"
+        android:layout_marginLeft="5dp"
+        />
+    <milosevic.m.sasa.supermarket.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_cart"
+        android:layout_alignParentBottom="true"
+        android:text="Kolicina: 1"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/amount"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minus"
+        android:layout_centerVertical="true"
+        android:id="@+id/minus"
+        android:layout_toLeftOf="@+id/plus"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:id="@+id/plus"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="19dp"
+
+       />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_opacity_10"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/image_cart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>
