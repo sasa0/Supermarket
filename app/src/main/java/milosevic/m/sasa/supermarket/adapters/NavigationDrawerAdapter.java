@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import milosevic.m.sasa.supermarket.R;
+
 
 public class NavigationDrawerAdapter extends ArrayAdapter {
 
@@ -38,22 +40,25 @@ public class NavigationDrawerAdapter extends ArrayAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View row = convertView;
+
         Holder holder = null;
 
+        if (position == 0) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.navigation_item1, null);
+        } else if ((position>0 && position<3)||(position>9)){
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.navigation_item2, null);
+        } else {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.navigation_item3, null);
+        }
 
-            row = mInflater.inflate(mResource,parent,false);
+
 
             holder = new Holder();
 
-        if (position==0){
 
+            convertView.setTag(holder);
 
-
-        }
-            row.setTag(holder);
-
-        return row;
+        return convertView;
     }
 
 
