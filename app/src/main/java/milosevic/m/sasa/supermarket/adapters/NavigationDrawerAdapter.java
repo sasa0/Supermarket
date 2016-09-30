@@ -17,7 +17,6 @@ public class NavigationDrawerAdapter extends ArrayAdapter {
     private ArrayList<String> mList;
     private LayoutInflater mInflater;
 
-
     public NavigationDrawerAdapter(Context context, int resource, ArrayList objects) {
         super(context, resource, objects);
 
@@ -34,7 +33,7 @@ public class NavigationDrawerAdapter extends ArrayAdapter {
 
     @Override
     public int getViewTypeCount() {
-        return super.getViewTypeCount();
+        return 4;
     }
 
     @Override
@@ -42,29 +41,23 @@ public class NavigationDrawerAdapter extends ArrayAdapter {
         View row = convertView;
         Holder holder = null;
 
-        if(row==null){
+
             row = mInflater.inflate(mResource,parent,false);
 
             holder = new Holder();
 
+        if (position==0){
 
+
+
+        }
             row.setTag(holder);
-
-
-        }
-        else{
-            holder = (Holder) row.getTag();
-
-        }
-
-
 
         return row;
     }
 
 
     private class Holder{
-        public TextView sample;
 
 
     }

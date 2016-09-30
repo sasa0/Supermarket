@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_margin="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/username"
+        />
+
+    <milosevic.m.sasa.supermarket.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="Sasa Milosevic"
+        android:textColor="#1d1d26"
+        android:layout_toRightOf="@+id/photo"
+        android:id="@+id/name"
+        android:layout_margin="33dp"
+        />
+    <milosevic.m.sasa.supermarket.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="Sasa Milosevic"
+        android:textColor="#1d1d26"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        />
+
+
+
+</RelativeLayout>
