@@ -21,7 +21,7 @@
         android:textColor="#1d1d26"
         android:layout_toRightOf="@+id/photo"
         android:id="@+id/name"
-        android:layout_margin="33dp"
+        android:layout_margin="25dp"
         />
     <milosevic.m.sasa.supermarket.components.CustomTextView
         android:layout_width="wrap_content"

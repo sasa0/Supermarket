@@ -36,5 +36,10 @@
     <string name="Greska">Doslo je do greske,pokusajte ponovo!</string>
     <string name="forgotten_password">Zaboravljena lozinka?</string>
     <string name="send_email">Posaljite Vasu E-mail adresu </string>
+    <string name="cart">Korpa</string>
+    <string name="statistics">Statistika</string>
+    <string name="total_amount">UKUPAN IZNOS</string>
+    <string name="bought">KUPOVINE</string>
+    <string name="recommendations">PREPORUKE</string>
     
 </resources>

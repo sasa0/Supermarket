@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/white_opacity_10"
+        android:layout_weight="0.03">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/backButton"
+            />
+
+        <milosevic.m.sasa.supermarket.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics"
+            android:layout_gravity="bottom"
+            android:textSize="22.7sp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/person_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/username"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginRight="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="15dp"
+        android:background="#0affffff"
+        >
+        <milosevic.m.sasa.supermarket.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 3500.34"
+            android:textSize="45sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/statistics_green"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/viewTotal"
+            />
+        <milosevic.m.sasa.supermarket.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14.7sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_circle_white_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginRight="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginRight="7.5dp"
+                android:background="#0affffff">
+                <milosevic.m.sasa.supermarket.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="45sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/statistics_bought"
+                    android:layout_alignParentBottom="true"
+                    />
+                <milosevic.m.sasa.supermarket.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bought"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14.7sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_access_time_white_24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="7.5dp"
+                android:background="#0affffff">
+                <milosevic.m.sasa.supermarket.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="45sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/statistics_recommendations"
+                    android:layout_alignParentBottom="true"
+
+                    />
+                <milosevic.m.sasa.supermarket.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recommendations"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14.7sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_error_white_24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

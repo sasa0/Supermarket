@@ -22,7 +22,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ui.HomePage"
+        <activity android:name=".ui.Statistics"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +38,7 @@
         <activity android:name=".ui.ShoppingCart"/>
         <activity android:name=".ui.StartActivity"/>
         <activity android:name=".ui.ProductDetails"/>
+        <activity android:name=".ui.HomePage"/>
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@
         <milosevic.m.sasa.supermarket.components.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Korpa"
+            android:text="@string/cart"
             android:layout_gravity="bottom"
             android:textSize="22.7sp"
             android:padding="10dp"
