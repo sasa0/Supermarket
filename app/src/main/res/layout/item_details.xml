@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/white_opacity_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_weight="0.1"
+            android:padding="10dp"
+
+            android:layout_gravity="bottom"
+            android:id="@+id/backButton"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_white"
+            android:layout_weight="0.8"
+            android:padding="10dp"
+            android:layout_gravity="bottom"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="#fff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <milosevic.m.sasa.supermarket.components.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:textColorHint="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:layout_margin="15dp"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_opacity_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <milosevic.m.sasa.supermarket.components.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:textColorHint="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:layout_margin="15dp"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_opacity_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <milosevic.m.sasa.supermarket.components.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:textColorHint="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:layout_margin="15dp"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_opacity_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <milosevic.m.sasa.supermarket.components.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:textColorHint="#fff"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textCursorDrawable="@null"
+                        android:layout_margin="15dp"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_opacity_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#feea00"
+            android:textSize="15sp"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/login_button"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginBottom="29dp"/>
+
+
+
+    </LinearLayout>
+    </LinearLayout>

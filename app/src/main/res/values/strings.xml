@@ -41,5 +41,6 @@
     <string name="total_amount">UKUPAN IZNOS</string>
     <string name="bought">KUPOVINE</string>
     <string name="recommendations">PREPORUKE</string>
+    <string name="add_to_cart">Dodaj u korpu</string>
     
 </resources>
