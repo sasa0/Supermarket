@@ -62,6 +62,8 @@ public class CustomEditText extends EditText {
         super.setCursorVisible(true);
     }
 
+
+
     String hint = getHint().toString();
 
     @Override
@@ -92,6 +94,15 @@ public class CustomEditText extends EditText {
 
     }
 
+    @Override
+    public void setTextColor(int color) {
+        super.setTextColor(Color.WHITE);
+    }
+
+    @Override
+    public void setBackgroundColor(int color) {
+        super.setBackgroundColor(Color.WHITE);
+    }
 
     //not available below API 21
   /*  @Override

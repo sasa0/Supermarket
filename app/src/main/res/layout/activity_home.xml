@@ -42,7 +42,8 @@
                  android:src="@drawable/search"
                  android:layout_weight="0.1"
                  android:padding="10dp"
-                 android:layout_gravity="bottom"/>
+                 android:layout_gravity="bottom"
+                 android:id="@+id/btnSearch"/>
 
          </LinearLayout>
 
