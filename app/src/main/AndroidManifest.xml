@@ -23,24 +23,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ui.HomePage"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".ui.LoginActivity"
-                  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".ui.ForgottenPasswordActivity"/>
-        <activity android:name=".ui.TermsOfUseActivity"/>
-        <activity android:name=".ui.MessageActivity"/>
-        <activity android:name=".ui.ShoppingCart"/>
-        <activity android:name=".ui.Statistics"/>
-        <activity android:name=".ui.ProductDetails"/>
-        <activity android:name=".ui.StartActivity"/>
+                  android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ForgottenPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.TermsOfUseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.MessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ShoppingCart"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.Statistics"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ProductDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.StartActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".ui.SearchActivity"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
