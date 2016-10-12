@@ -32,7 +32,8 @@
                android:textColorHint="#fff"
                android:gravity="center_vertical"
                android:layout_gravity="center_vertical"
-               android:textCursorDrawable="@null"
+               android:inputType="textEmailAddress"
+               android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                />
 
 
@@ -75,7 +76,8 @@
                 android:textColorHint="#fff"
                 android:gravity="center_vertical"
                 android:layout_gravity="center_vertical"
-                android:textCursorDrawable="@null"
+                android:textCursorDrawable="@drawable/ic_remove_white_24dp"
+                android:inputType="textPassword"
                 />
 
 

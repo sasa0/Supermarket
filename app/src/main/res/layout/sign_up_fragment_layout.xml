@@ -38,6 +38,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -78,6 +79,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -118,6 +120,8 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -158,6 +162,9 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:id="@+id/password1"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -187,10 +194,12 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/password"
                     android:layout_gravity="center_vertical"
-                    android:layout_margin="20dp"
-                    />
+                    android:layout_margin="20dp" />
+
+
                 <milosevic.m.sasa.supermarket.components.CustomEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
+                    android:minWidth="40dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/password_retype"
                     android:textColor="#fff"
@@ -198,7 +207,23 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:id="@+id/password2"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="20dp"
+                    android:id="@+id/check_password"
+
+                    />
+
 
 
             </LinearLayout>
@@ -238,6 +263,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -278,6 +304,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -318,6 +345,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -358,6 +386,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -399,6 +428,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -439,6 +469,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -479,6 +510,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 
@@ -519,6 +551,7 @@
                     android:textColorHint="#fff"
                     android:gravity="center_vertical"
                     android:layout_gravity="center_vertical"
+                    android:textCursorDrawable="@drawable/ic_remove_white_24dp"
                     />
 
 

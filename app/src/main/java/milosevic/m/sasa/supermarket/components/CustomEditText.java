@@ -19,9 +19,6 @@ import milosevic.m.sasa.supermarket.R;
 public class CustomEditText extends EditText {
 
 
-
-
-
     public CustomEditText(Context context) {
         super(context);
 
@@ -52,7 +49,7 @@ public class CustomEditText extends EditText {
         super.setTypeface(createFont());
     }
 
-    public Typeface createFont(){
+    public Typeface createFont() {
         Typeface custom_font = Typeface.createFromAsset(getResources().getAssets(), "fonts/avenir_book.ttf");
         return custom_font;
     }
@@ -63,40 +60,19 @@ public class CustomEditText extends EditText {
     }
 
 
-
-    String hint = getHint().toString();
-
     @Override
     public void setFocusableInTouchMode(boolean focusableInTouchMode) {
         super.setFocusableInTouchMode(false);
     }
 
-    @Override
-    protected void onFocusChanged(boolean focused, int direction, Rect previouslyFocusedRect) {
-        super.onFocusChanged(focused, direction, previouslyFocusedRect);
-
-        if (focused){
 
 
-            setOnTouchListener(new OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    setHint("");
-                    return false;
-                }
-            });
 
-
-        }else{
-            setHint(hint);
-        }
-
-
-    }
 
     @Override
     public void setTextColor(int color) {
         super.setTextColor(Color.WHITE);
+        setHintTextColor(Color.GRAY);
     }
 
     @Override

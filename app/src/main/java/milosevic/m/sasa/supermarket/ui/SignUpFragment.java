@@ -1,16 +1,24 @@
 package milosevic.m.sasa.supermarket.ui;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import milosevic.m.sasa.supermarket.R;
+import milosevic.m.sasa.supermarket.components.CustomEditText;
 
 
 public class SignUpFragment extends Fragment {
@@ -18,6 +26,10 @@ public class SignUpFragment extends Fragment {
     private View mRootView;
     Spinner citySpinner;
     ArrayList<String> cityList;
+
+    private CustomEditText mPassword;
+    private CustomEditText mRepeatPassword;
+    private ImageView mCheckPassword;
 
 
     @Override
@@ -46,5 +58,74 @@ public class SignUpFragment extends Fragment {
         spinnerArrayAdapter.setDropDownViewResource(R.layout.city_spinner_item);
 
         citySpinner.setAdapter(spinnerArrayAdapter);
+
+
+        mPassword = (CustomEditText)mRootView.findViewById(R.id.password1);
+        mRepeatPassword = (CustomEditText)mRootView.findViewById(R.id.password2);
+        mCheckPassword = (ImageView)mRootView.findViewById(R.id.check_password);
+      //  mCheckPassword.setVisibility(View.INVISIBLE);
+
+
+        mRepeatPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (mPassword.getText().toString().equalsIgnoreCase(mRepeatPassword.getText().toString())){
+
+                    mCheckPassword.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_circle_white_24dp));
+                    mCheckPassword.setColorFilter(Color.GREEN);
+
+                } else {
+
+                    mCheckPassword.setImageDrawable(getResources().getDrawable(R.drawable.ic_highlight_off_white_24dp));
+                    mCheckPassword.setColorFilter(Color.RED);
+
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+
+
+            }
+        });
+
+        mPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (mPassword.getText().toString().equalsIgnoreCase(mRepeatPassword.getText().toString())){
+
+                    mCheckPassword.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_circle_white_24dp));
+                    mCheckPassword.setColorFilter(Color.GREEN);
+
+                } else {
+
+                    mCheckPassword.setImageDrawable(getResources().getDrawable(R.drawable.ic_highlight_off_white_24dp));
+                    mCheckPassword.setColorFilter(Color.RED);
+
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+
+
+            }
+        });
     }
 }
